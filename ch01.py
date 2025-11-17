@@ -83,7 +83,7 @@ tm_run = 1000
 import matplotlib.pyplot as plt
 import numpy as np
 
-running_flag = False  # 为true执行闭环
+running_flag = True  # 为true执行闭环
 
 if running_flag:
     # 🌟 执行闭环仿真并接收返回的数据
