@@ -11,7 +11,7 @@ class Buffer:
     def work(self, u: float) -> int:
         # u: 加入ready pool的units的数量
         # Add to ready pool
-        u = max(0, int(round(u)))  # u四舍五入并转换为int
+        u = max(0, int(round(u)))  # u四舍五入并转换为int, u为负数的时候，截断为0
         u = min(u, self.max_wip)  # 避免超过设定的加入最大值
         self.wip += u
 
